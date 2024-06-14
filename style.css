@@ -1,0 +1,134 @@
+html,
+body {
+  min-height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  max-width: 1920px;
+  font-family: 'SF Pro Display', 'Arial', sans-serif;
+  background-color: #1e1e1e;
+  display: block;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin: 20px 20px;
+}
+.header__container {
+    display: flex;
+    flex-direction: row;
+}
+.header__container_button {
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+/* тут будет эффектное видео на фоне */
+.header__video {
+    width: 100%;
+}
+
+.main {
+    position: relative;
+}
+.main__cards {
+    width: 100%;
+    position: absolute;
+}
+.main__card_first {
+    width: 100%;
+    fill: white;
+    z-index: 2;
+}
+
+.main__card_color {
+    width: 100%;
+    fill: white;
+}
+.main__card_color:hover {
+    fill: red;
+}
+
+
+.main__card_second {
+    width: 100%;
+    z-index: 3;
+    margin-top: -30%;
+}
+.main__card_third {
+    width: 100%;
+    z-index: 4;
+    margin-top: -30%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin-top: 50%;
+}
+.footer__text {
+    color: white;
+}
+.footer__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* store */
+
+.search {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    flex-direction: row;
+    width: 100%;
+}
+
+.search__bar {
+    width: 80%;
+}
+.search__bag {
+    width: 10%;
+}
+
+.store {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+}
+.store__card {
+    display: grid;
+    background-color: white;
+    border: 2px solid black;
+    grid-template-rows: 3fr 1fr 1fr;
+}
+.store__card_text {
+    border-top: 2px solid black;
+}
+.store__card_buy {
+    border-top: 2px solid black;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
