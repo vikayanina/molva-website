@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>molva</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <header class="header-nav">
+        <a class="header-nav__back" href="./index.html"></a>
+        <div class="header-nav__card-container">
+            <a><img src="./img/archive-news.png" alt="кнопка навигации по архиву"></a>
+            <a><img src="./img/archive-navigation.png" alt="кнопка навигации по архиву"></a>
+            <a><img src="./img/archive-library.png" alt="кнопка навигации по архиву"></a>
+            <a><img src="./img/archive-random.png" alt="кнопка навигации по архиву"></a>
+        </div>
+            <div class="header-nav__title">АРХИВ</div>
+    </header>
+
+<section class="news">
+    <img class="news__item news__item1" src="./img/new-1.png" alt="карточка с новостью">
+    <img class="news__item news__item2" src="./img/new-2.png" alt="карточка с новостью">
+</section>
+
+<section class="video">
+    <div class="video__left">
+        <img class="video__left_title" src="./img/video-title.png" alt="виртуальная экскурсия">
+        <img class="video__left_img" src="./img/video-img.png" alt="фрагмент здания">
+    </div>
+    <div class="video__right">
+        <iframe class="video__right_youtube"  src="https://www.youtube.com/embed/RahoHJky0DQ?si=1s73L-Jh7IjgiHt0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <img class="video__right_note" src="./img/video-notes.png" alt="карточка с описанием">
+    </div>
+</section>
+
+<section class="rooms">
+    <div class="rooms__card">
+        <div class="rooms__card_img rooms__1"></div>
+        <p class="rooms__card_text">библиотека</p>
+    </div>
+    <div class="rooms__card">
+        <div class="rooms__card_img rooms__2"></div>
+        <p class="rooms__card_text">читальный зал</p>
+    </div>
+    <div class="rooms__card">
+        <div class="rooms__card_img rooms__3"></div>
+        <p class="rooms__card_text">кофейня</p>
+    </div>
+    <div class="rooms__card">
+        <div class="rooms__card_img rooms__4"></div>
+        <p class="rooms__card_text">лекторий</p>
+    </div>
+</section>
+
+<section class="random">
+    <div class="random__button" data-modal-btn="my_modal2">
+        <svg  viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="250" cy="250" r="249" fill="white" stroke="black" stroke-width="2"/>
+            <circle cx="249.5" cy="251.5" r="226.5" fill="white" stroke="black" stroke-width="2"/>
+            <circle cx="250" cy="250" r="206" fill="white" stroke="black" stroke-width="2"/>
+            <circle cx="250" cy="252" r="186" fill="white" stroke="black" stroke-width="2"/>
+            <circle class="random__button_center" cx="250" cy="252" r="164" fill="white" stroke="black" stroke-width="2"/>
+            </svg>
+    </div>
+    <div class="random__text">
+        <h2 class="random__text_title"> СЛУЧАЙНАЯ СПЛЕТНЯ </h2>
+        <p class="random__text_text">Не знаешь с чего начать? Попробуй новую функцию <br> цифрового архива: при нажатии на кнопку выдается <br> любая сплетня из открытой базы Молвы.</p>
+        <p class="random__text_button">ПОДПИСАТЬСЯ НА РАССЫЛКУ</p>
+    </div>
+</section>
+<div data-modal-window="my_modal2" class="modal">
+    <div class="modal_content">
+        <div class="modal_inner">
+            <p class="modal_title">СПЛЕТНЯ О ТЕБЕ</p>
+            <div class="close_modal_window">&#x2717</div>
+        </div>
+        <p class="random__message">ВСЕ СЧИТАЮТ ЧТО ТЫ ЗАМЕЧАТЕЛЬНЫЙ!</p>
+        <p>ПОНРАВИЛОСЬ БЫТЬ В КУРСЕ НОВОСТЕЙ?</p>
+        <p>подпишись на ежедневную рассылку чтобы все самые актуальные сплетни всегда были под рукой</p>
+        <form id="feedbackForm">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required></textarea>
+          
+            <button type="submit">Отправить</button>
+    </div>
+</div>
+
+    <footer class="footer">
+        <img class="footer__card" src="./img/footer.png" alt="контакты">
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+
+
+
+
+

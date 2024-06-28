@@ -6,30 +6,84 @@
     <title>molva</title>
     <link rel="stylesheet" href="style.css"/>
 </head>
-
 <body>
-    <header class="header">
-        <div class="header__container">
-            <a class="header__container_button" href="navigation.html">НАВИГАЦИЯ</a>
-            <a class="header__container_button" href="blog.html">БЛОГ</a>
-            <a class="header__container_button" href="contacts.html">КОНТАКТЫ</a>
-        </div>
-    </header>
+<header class="header-nav">
+    <a class="header-nav__back" href="./index.html"></a>
+    <div class="header-nav__card-container">
+        <a><img src="./img/store-menu-merch.png" alt="кнопка навигации по афише"></a>
+        <a><img src="./img/store-menu-souvenirs.png" alt="кнопка навигации по афише"></a>
+        <a><img src="./img/store-menu-devices.png" alt="кнопка навигации по афише"></a>
+        <a><img src="./img/store-menu-books.png" alt="кнопка навигации по афише"></a>
+    </div>
+        <div class="header-nav__title">МАГАЗИН</div>
+</header>
+
+<main class="main-store">
     <div class="search">
-    </div>
-    <!-- <div class="store">
-        <img class="store__card" src="./img/card1.png">
-        <img class="store__card" src="./img/card2.png">
-        <img class="store__card" src="./img/card3.png">
-    </div> -->
-    <div class="store">
-        <div class="store__card">
-            <div class="store__card_img"><img src="./img/card1.png" alt="комнатное растение"></div>
-            <div class="store__card_text"> <p>КОМНАТНОЕ РАСТЕНИЕ С ФУНКЦИЕЙ ПРОСЛУШИВАНИЯ <br/> И ЗАПИСИ СПЛЕТЕН</p></div>
-            <div class="store__card_buy">
-                <div class="store__card_buy_price"> <p>5 900</p></div>
-                <div class="store__card_buy_basket"></div>
-            </div>
+        <div class="search__icon"></div>
+        <div data-modal-window="my_modal6" class="modal">
+            <input class="modal_content" type="text"name="kye">
         </div>
     </div>
+<div class="store__first-line">
+    <div class="store__card_big store__card_plant" data-modal-btn="my_modal1">
+        <div class="store__card_big_img store__card_big_img_plant"></div>
+        <p class="store__card_text_big">КОМНАТНОЕ РАСТЕНИЕ <br> С ФУНКЦИЕЙ ПРОСЛУШИВАНИЯ <br> И ЗАПИСИ СПЛЕТЕН</p>
+        <div class="store__card_buy_big">
+            <p class="store__card_buy_price_big">5900</p>
+            <div class="store__card_buy_basket"></div>
+        </div>
+    </div>
+    <div data-modal-window="my_modal1" class="modal">
+        <div class="modal_content">
+            <div class="close_modal_window">&#x2717</div>
+<img class="modal_content_basket" src="./img/basket-order.png">
+        </div>
+    </div>
+
+    <div class="store__card_big store__card_cassette">
+        <div class="store__card_big_img store__card_big_img_cassette"></div>
+        <p class="store__card_text_big">КОЛЛЕКЦИОННАЯ КАССЕТА<br>С ЗАПИСЬЮ ИСТОРИЧЕСКИХ<br>СПЛЕТЕН</p>
+        <div class="store__card_buy_big">
+            <p class="store__card_buy_price_big">4200</p>
+            <div class="store__card_buy_basket"></div>
+        </div>
+    </div>
+</div>
+
+<div class="store__second-line">
+
+    <div class="store__card">
+        <div class="store__card_img store__card_img_book"></div>
+        <p class="store__card_text">ПУТЕВОДИТЕЛЬ ПО АРХИВУ <br>СПЛЕТЕН МОЛВА</p>
+        <div class="store__card_buy">
+            <p class="store__card_buy_price">1550</p>
+            <div class="store__card_buy_basket"></div>
+        </div>
+    </div>
+    <div class="store__card">
+        <div class="store__card_img store__card_img_headphones"></div>
+        <p class="store__card_text">НАУШНИКИ С ПОДАВЛЕНИЕМ<br>ВСЕХ ПОСТОРОННИХ ШУМОВ</p>
+        <div class="store__card_buy">
+            <p class="store__card_buy_price">1550</p>
+            <a class="store__card_buy_basket" href="#"></a>
+        </div>
+    </div>
+    <div class="store__card">
+        <div class="store__card_img store__card_img_notebook"></div>
+        <p class="store__card_text">НЕДАТИРОВАННЫЙ ЕЖЕДНЕВНИК<br>ДЛЯ ЗАПИСИ СПЛЕТЕН</p>
+        <div class="store__card_buy">
+            <p class="store__card_buy_price">1550</p>
+            <div class="store__card_buy_basket"></div>
+        </div>
+    </div>
+</div>
+
+
+</main>
+
+<footer class="footer">
+    <img class="footer__card" src="./img/footer.png" alt="контакты">
+</footer>
+<script src="script.js"></script>
 </body>
