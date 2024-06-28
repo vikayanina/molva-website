@@ -1,3 +1,7 @@
+@import url(normalize.css);
+@import url(./fonts/font-face.css);
+
+
 html,
 body {
   min-height: 100%;
@@ -16,16 +20,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/*первая страница*/
 .main-page {
     background-color: #1E1E1E;
 }
 
-
 .main {
     position: relative;
 }
-
-
 .main-header {
     display: flex;
     justify-content: center;
@@ -48,8 +51,6 @@ body {
 .header__logo_img:hover {
     fill: #1E1E1E;
 }
-
-
 .card {
     background-size: contain;
     background-repeat: no-repeat;
@@ -82,8 +83,44 @@ body {
     bottom: 0;
 }
 
+/* меню навигации */
 
-/*archive*/
+.header-nav {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    background-color: #fff;
+    justify-content: center;
+    border-bottom: 2px solid #2E2E2E;
+}
+.header-nav__card-container {
+    display: flex;
+    flex-direction: row;
+}
+.header-nav__back {
+    background-image: url(./img/arrow-back.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #fff;
+    border-right: 2px solid #2E2E2E;
+
+}
+.header-nav__back:hover {
+    background-color: #F53D15;
+}
+
+.header-nav__title {
+    font-size: 40px;
+    font-weight: 200;
+    background-color: #fff;
+    border-left: 2px solid #2E2E2E;
+    font-style: italic;
+    margin: 0;
+    padding: 30px;
+}
+
+
+/*архив*/
 .news {
     width: 100%;
 }
@@ -183,45 +220,8 @@ body {
 
 
 
-/* nav-bar */
 
-.header-nav {
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    background-color: #fff;
-    justify-content: center;
-    border-bottom: 2px solid #2E2E2E;
-}
-.header-nav__card-container {
-    display: flex;
-    flex-direction: row;
-}
-.header-nav__back {
-    background-image: url(./img/arrow-back.png);
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: #fff;
-    border-right: 2px solid #2E2E2E;
-
-}
-.header-nav__back:hover {
-    background-color: #F53D15;
-}
-
-.header-nav__title {
-    font-size: 40px;
-    font-weight: 200;
-    background-color: #fff;
-    border-left: 2px solid #2E2E2E;
-    font-style: italic;
-    margin: 0;
-    padding: 30px;
-}
-
-
-/*store*/
-/*search*/
+/*магазин*/
 
 .search {
     width: 90%;
@@ -351,7 +351,7 @@ body {
 .store__card_buy_price_big:hover {
     background-color: #F53D15;
 }
-/* afisha */
+/* афиша */
 
 .afisha-main__first-line {
     display: flex;
@@ -446,7 +446,7 @@ body {
 .footer {
     margin-top: 40px;
 }
-
+/*всплывающее окно*/
 .modal {
     position: fixed;
     z-index: 100;
